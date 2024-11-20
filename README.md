@@ -38,7 +38,7 @@ You can view the live demo of the project by following this link:
 
 ```bash
 git clone https://github.com/habidbesp/task-repo.git
-cd tractive-task
+cd task-repo
 ```
 
 2. **Install dependencies**: Make sure you have Node.js and npm installed. Run:
