@@ -7,6 +7,7 @@ This project is a visually appealing and responsive web layout. It incorporates 
 ## Demo
 
 You can view the live demo of the project by following this link:
+
 [task-demo](https://habidbesp.github.io/task-repo/)
 
 ## Features
