@@ -1,0 +1,9 @@
+// variables for colors
+$bg-blue: #003a8e;
+$bg-black: #1a1b1c;
+$color-primary: #fefbfe;
+
+// Variables to pass as arguments for the @mixin respond($breakpoint)
+$breakpoint-medium: medium; // Corresponds to min-width: 600px
+$breakpoint-large: large; // Corresponds to min-width: 900px
+$breakpoint-extra-large: extra-large; // Corresponds to min-width: 1200px

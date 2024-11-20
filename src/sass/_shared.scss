@@ -1,0 +1,5 @@
+// Centralizes and forwards shared styles like
+// variables, mixins, and animations.
+@forward "variables";
+@forward "mixins";
+@forward "animations";

@@ -1,0 +1,42 @@
+// This mixin centers an element both horizontally and vertically
+// using Flexbox. It sets the container to `display: flex`, aligns
+// items to the center along the main axis (horizontal), and centers
+// them along the cross axis (vertical).
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ******************************************************
+// This mixin is designed for a mobile-first approach.
+// It applies styles for larger screens using media queries with `min-width` breakpoints.
+// The `$breakpoint` parameter accepts predefined values (e.g., `medium`, `large`, `extra-large`).
+// Inside the `@content` block, you can define CSS rules that will apply only at the specified breakpoint or larger.
+// Example usage:
+// .container {
+//   font-size: 14px; // Default styles for mobile
+//   @include respond(medium) {
+//     font-size: 16px; // Styles for screens 600px and larger
+//   }
+//   @include respond(large) {
+//     font-size: 18px; // Styles for screens 900px and larger
+//   }
+// }
+@mixin respond($breakpoint) {
+  @if $breakpoint == medium {
+    @media (min-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == large {
+    @media (min-width: 900px) {
+      @content;
+    }
+  } @else if $breakpoint == extra-large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint not recognized: #{$breakpoint}";
+  }
+}

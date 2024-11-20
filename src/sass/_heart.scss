@@ -1,0 +1,46 @@
+@use "shared" as *;
+
+// Controls the heart size and dynamically adjusts other related properties using calc()
+$heart-size: 25px;
+
+.heart__wrapper {
+  position: absolute;
+  left: calc(50% - ($heart-size / 2));
+  bottom: calc(50% - ($heart-size / 1.25));
+  z-index: 1000;
+
+  @include respond($breakpoint-large) {
+    position: static;
+    @include center-flex;
+  }
+}
+
+.heart {
+  height: $heart-size;
+  width: $heart-size;
+  background-color: $color-primary;
+  transform: rotate(-45deg);
+  position: relative;
+  -webkit-animation: heartbeat 1.5s infinite;
+  animation: heartbeat 1.5s infinite;
+
+  &::before,
+  &::after {
+    content: "";
+    height: $heart-size;
+    width: $heart-size;
+    background-color: $color-primary;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  &::before {
+    top: calc(($heart-size / -2));
+    left: 0px;
+  }
+
+  &::after {
+    left: calc(($heart-size / 2));
+    top: 0px;
+  }
+}

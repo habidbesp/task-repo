@@ -1,0 +1,11 @@
+@use "shared" as *;
+
+.container {
+  min-height: 100vh;
+  width: 95%;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  @include center-flex;
+}
