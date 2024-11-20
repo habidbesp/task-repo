@@ -4,6 +4,11 @@
 
 This project is a visually appealing and responsive web layout. It incorporates modern techniques such as Sass for styling, responsive image handling with `picture` elements, and optimizations using `webp` images for better performance.
 
+## Demo
+
+You can view the live demo of the project by following this link:
+[task-demo](https://habidbesp.github.io/task-repo/)
+
 ## Features
 
 - **Responsive Design**: The layout adapts seamlessly across different screen sizes, including mobile-first design principles.
@@ -23,6 +28,8 @@ This project is a visually appealing and responsive web layout. It incorporates 
 - **Sass**: Preprocessor used for cleaner, more maintainable CSS code.
 
 - **WebP Images**: Used to improve load times and visual performance. Conversion of images to `webp` format was done using terminal-based tools like `cwebp`, ensuring optimized image handling.
+
+- **GitHub Pages**: Deployed directly from the `gh-pages` branch.
 
 ## Setup Instructions
 
