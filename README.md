@@ -1,8 +1,8 @@
-# Tractive - The Human Society of the United States
+# Task-repo
 
 ## Overview
 
-This project is a visually appealing and responsive web layout for the Human Society of the United States. It incorporates modern techniques such as Sass for styling, responsive image handling with `picture` elements, and optimizations using `webp` images for better performance.
+This project is a visually appealing and responsive web layout. It incorporates modern techniques such as Sass for styling, responsive image handling with `picture` elements, and optimizations using `webp` images for better performance.
 
 ## Features
 
